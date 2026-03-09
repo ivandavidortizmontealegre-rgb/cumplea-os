@@ -10,7 +10,7 @@ body{
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg,#ff9a9e,#fad0c4);
   color:white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #inicio{
@@ -66,6 +66,20 @@ h1{
   0%{top:-10px; transform:rotate(0deg);}
   100%{top:100vh; transform:rotate(360deg);}
 }
+.galeria{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.galeria img{
+  width:180px;
+  height:auto;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
 </style>
 
 </head>
@@ -90,11 +104,17 @@ h1{
     Espero que este año te traiga mucha felicidad, salud y momentos hermosos. 💖
   </p>
   <h2>🎁 Te amo mucho mamá ❤️</h2>
-</div>
+<div class="galeria">
 
-<audio id="musica" autoplay loop>
-  <source src="musica.mp3" type="audio/mpeg">
-</audio>
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+<img src="foto6.jpg">
+
+</div>
+</div>
 
 <script>
 function mostrar(){
@@ -130,6 +150,7 @@ function crearConfeti(){
 
 </body>
 </html>
+
 
 
 
