@@ -68,6 +68,19 @@ h1{
 }
 </style>
 
+  .galeria{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+}
+
+.galeria img{
+width:220px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
 </head>
 <body>
 
@@ -75,8 +88,21 @@ h1{
   <source src="musica.mp3" type="audio/mpeg">
 </audio>
 <div id="inicio">
-  
-<h1>💌 Tengo una sorpresa para ti mamá</h1>
+
+  <h1>Feliz Cumpleaños Mamá 🎉</h1>
+
+<h2>Nuestros momentos ❤️</h2>
+
+<div class="galeria">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+<img src="foto6.jpg">  
+
+  <h1>💌 Tengo una sorpresa para ti mamá</h1>
   <button onclick="mostrar()">Toca aquí ❤️</button>
 </div>
 
@@ -130,4 +156,5 @@ function crearConfeti(){
 
 </body>
 </html>
+
 
